@@ -18,9 +18,9 @@ USER root
 
 RUN	apt-get install aria2
 
-RUN   apt-get install nmap
+RUN     apt-get install nmap
 
-RUN   apt-get install traceroute
+RUN     apt-get install traceroute
 
 # 3) install packages
 RUN pip install --no-cache-dir geopandas babypandas
