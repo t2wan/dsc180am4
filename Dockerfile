@@ -27,6 +27,7 @@ RUN pip install --no-cache-dir geopandas babypandas
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
+RUN chmod 755 /run_jupyter.sh
 USER $NB_UID
 
 # Override command to disable running jupyter notebook at launch
